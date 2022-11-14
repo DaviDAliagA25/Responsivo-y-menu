@@ -1,0 +1,244 @@
+body{
+    background-color: #091a18;
+    color: rgb(255, 255, 255);
+    font-family: 'Gemunu Libre', sans-serif;
+    margin: 20px;
+}
+header{
+    background-color: rgb(0, 46, 125);
+    color: rgb(255, 255, 255);
+    font-family: 'Gemunu Libre', sans-serif;
+    text-align: center;
+    margin: 15px;
+    padding: 2px;
+}
+h2{
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid rgb(0, 46, 125);
+    border-radius: 5px;
+}
+footer{
+    background-color: rgb(0, 46, 125);
+    color: rgb(255, 255, 255);
+    font-family: 'Gemunu Libre', sans-serif;
+    text-align: center;
+    margin: 50px;
+    padding: 1px;
+}
+nav{
+    overflow: hidden;
+    background-color: rgb(0, 46, 125);
+    padding: 20px 10px;
+}
+
+.menu{
+    position: static;
+    right: 20px;
+}
+
+.menu a{
+    color: rgb(29, 3, 3);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+
+.menu a:hover{
+    color: rgb(214, 24, 34);
+}
+
+.btn {
+    display: none;
+    position: static;
+    right: 20px;
+}
+.btn:hover > span {
+    background-color: #E85860;
+}
+.btn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #333;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4,3fr);
+    grid-gap: 1em;
+    grid-template-rows: minmax(20px auto);
+    padding: 25px;
+}
+.contenedor div{
+    background-color: rgb(45, 68, 35);
+    color: rgb(94, 167, 167);
+    padding: 2em;
+    font-size: 21px;
+}
+.contenedor div:hover{
+    border: 5px solid rgb(0, 0, 0) ;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(52, 107, 126);
+    }
+      h2{
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+      }
+      header{
+        background-color: rgb(0, 46, 125);
+        color: rgb(255, 255, 255);
+        font-family: 'Gemunu Libre', sans-serif;
+        text-align: center;
+        margin: 15px;
+        padding: 2px;
+      }
+      footer{
+        background-color: rgb(0, 46, 125);
+        color: rgb(255, 255, 255);
+        font-family: 'Gemunu Libre', sans-serif;
+        text-align: center;
+        margin: 50px;
+        padding: 1px;
+    }
+    nav{
+        overflow: visible;
+        background-color: rgb(0, 46, 125);
+        padding: 20px 10px;
+    }
+    nav a{
+        float: left;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+    .menu {
+        width: 100%;
+        right: 10;
+        top: 80px;
+        background: #916363e6;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 500px;
+    }
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1em;
+        grid-template-rows: minmax(20px auto);
+        padding: 25px;
+    }
+    .contenedor div{
+        background-color: rgb(45, 68, 35);
+        color: rgb(94, 167, 167);
+        padding: 2em;
+        font-size: 21px;
+    }
+    .contenedor div:hover{
+        border: 5px solid rgb(0, 0, 0) ;
+    }
+  }
+@media only screen and (max-width: 450px) {
+    body {
+      background-color: rgb(141, 130, 87);
+      color: black;
+    }
+      h2{
+        color: blue;
+        font-size: 30px;
+      }
+      header{
+        background-color: rgb(0, 46, 125);
+        color: rgb(255, 255, 255);
+        font-family: 'Gemunu Libre', sans-serif;
+        text-align: center;
+        margin: 15px;
+        padding: 2px;
+      }
+      footer{
+        background-color: rgb(0, 46, 125);
+        color: rgb(255, 255, 255);
+        font-family: 'Gemunu Libre', sans-serif;
+        text-align: center;
+        margin: 50px;
+        padding: 1px;
+    }
+    nav{
+        overflow: hidden;
+        background-color: rgb(0, 46, 125);
+        padding: 20px 10px;
+    }
+    .menu{
+    position: static;
+    right: 20px;
+}
+
+.menu a{
+    color: rgb(94, 31, 31);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+
+.menu a:hover{
+    color: rgb(160, 20, 27);
+}
+
+.btn {
+    display: none;
+    position: static;
+    right: 20px;
+}
+.btn:hover > span {
+    background-color: #E85860;
+}
+.btn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #333;
+}
+
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(4,3fr);
+        grid-gap: 1em;
+        grid-template-rows: minmax(20px auto);
+        padding: 25px;
+    }
+    .contenedor div{
+        background-color: rgb(45, 68, 35);
+        color: rgb(94, 167, 167);
+        padding: 2em;
+        font-size: 21px;
+    }
+    .contenedor div:hover{
+        border: 5px solid rgb(0, 0, 0) ;
+    }
+  }
+
